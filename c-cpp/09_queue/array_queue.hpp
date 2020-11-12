@@ -14,7 +14,7 @@ class ArrayQueue {
     size_t tail_     = 0;
 
   public:
-    ArrayQueue() = delete;
+    ArrayQueue() = default;
     ArrayQueue(const size_t capacity) : capacity_(capacity) {
         items_ = new T[capacity_];
     }
